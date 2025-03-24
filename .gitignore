@@ -49,3 +49,5 @@ po/*~
 rsconnect/
 
 01_data/
+
+__pycache__
