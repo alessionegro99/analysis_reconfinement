@@ -48,4 +48,4 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-./01_data/*
+01_data/
