@@ -1,8 +1,8 @@
 library(hadron)
 
 Nt <- 10
-Ns <- 16
-HH <- seq(0.002000, 0.005750, by = 0.000250)
+Ns <- 96
+HH <- seq(0.003000, 0.004750, by = 0.000125)
 II <- seq(0, 2, by = 1)
 
 boot.R <- 500
@@ -12,10 +12,10 @@ boot.l <- 500
 ################################
 
 data_path <- function(Ns, hh, ii){
-  return(paste0("/home/negro/projects/reconfinement/R_reconfinement/01_data/L", Ns,"/data/dati_", sprintf("%.6f", hh), "_", ii, ".dat"))
+  return(paste0("/home/negro/projects/reconfinement/analysis_reconfinement/01_data/L", Ns,"/data/dati_", sprintf("%.6f", hh), "_", ii, ".dat"))
 }
 
-output_path <- "/home/negro/projects/reconfinement/R_reconfinement/02_output/"
+output_path <- "/home/negro/projects/reconfinement/analysis_reconfinement/02_output/"
 ################################
 
 L2 <- list()
@@ -57,7 +57,7 @@ U_t <-  cf_L4$cf.tsboot$t/cf_L2$cf.tsboot$t^2
 d_U <- apply(U_t, 2, sd)
 
 write.table(data.frame(Ns = Ns, h = HH, U = U, d_U = d_U),
-            file = paste0(output_path, "/L", Ns, "/U.txt"), sep = "\t", row.names = FALSE, col.names = FALSE, quote = FALSE, append = TRUE)
+            file = paste0(output_path, "/L", Ns, "/U.txt"), sep = " ", row.names = FALSE, col.names = FALSE, quote = FALSE, append = TRUE)
 
     
 pdf(paste0(output_path, "/L", Ns, "/U.pdf"))

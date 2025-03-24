@@ -1,8 +1,8 @@
 library(hadron)
 
 Nt <- 10
-NSS <- c(16, 32, 48, 64)
-CC <- c("blue", "purple", "orange", "darkgreen")
+NSS <- c(16, 32, 48, 64, 80, 96)
+CC <- c("blue", "purple", "orange", "darkgreen", "darkred", "")
 HH <- seq(0.002000, 0.005750, by = 0.000250)
 
 boot.R <- 500
