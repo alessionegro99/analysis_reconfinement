@@ -4,4 +4,4 @@ if __name__ == "__main__":
     
     path = "~/projects/reconfinement/analysis_reconfinement/01_data/"
     
-    reconfinement_xi.read(path)
+    reconfinement_xi.analysis(path)

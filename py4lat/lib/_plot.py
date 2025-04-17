@@ -11,11 +11,11 @@ IBM_COLORS = {
     }
     
 plt.rcParams.update({
-    "text.usetex": True,  # Enable LaTeX rendering for text
-    "font.family": "serif",  # Use a serif font family (for LaTeX)
-    "axes.labelsize": 14,  # Set label size
-    "axes.titlesize": 16,  # Set title size
-    "xtick.labelsize": 12,  # X-axis tick size
-    "ytick.labelsize": 12,  # Y-axis tick size
-    "font.size": 12,  # Global font size
+    "text.usetex": True,  
+    "font.family": "serif",  
+    "axes.titlesize": 32,  
+    "xtick.labelsize": 32,  
+    "ytick.labelsize": 32,
+    "axes.labelsize" : 32,  
+    "font.size": 32, 
     })
